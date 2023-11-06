@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="index.css" />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/60922564bf.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="bg-light">
+      <div class="header-container flex">
+        <div class="left-header flex">
+          <div class="hamburger button">
+            <i class="fa-solid fa-bars text-accent"></i>
+          </div>
+          <div class="logo">
+            <img src="assets/logo.svg" alt="" />
+          </div>
+        </div>
+        <div class="right-header">
+          <ul class="flex">
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-circle-info text-accent"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-bell text-accent"></i></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-circle-user text-accent"></i
+              ></a>
+            </li>
+            <li><h3 class="text-accent">Jaya</h3></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <aside class="bg-dark">
+        <div class="aside-container">
+          <ul>
+            <li>
+              <a href="#"><i class="fa-solid fa-clipboard text-orange"></i><span class="text-accent capitalized">Dashboard</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-rectangle-list text-orange"></i
+                ><span class="text-accent capitalized text-orange">budget tracker</span></a>
+            </li>
+            <li>
+              <a href="/labour.html"><i class="fa-solid fa-id-card text-orange"></i
+                ><span class="text-accent capitalized">Hours Tracker</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-comments text-orange"></i
+                ><span class="text-accent capitalized">communication</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-file-lines text-orange"></i
+                ><span class="text-accent capitalized">quotes</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-clapperboard text-orange"></i
+                ><span class="text-accent capitalized">estimates</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-user-tie text-orange"></i
+                ><span class="text-accent capitalized">client</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-file text-orange"></i
+                ><span class="text-accent capitalized">report</span></a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- app -->
+      <div class="inner-container">
+        <div>
+          <h1 class="inner-heading capitalized padding-buttom">budget tracker</h1>
+        </div>
+
+        <div class="app-container">
+          <!-- budget form -->
+          <div class="row">
+            <div class="column bg-dark budget-form-container">
+              <!-- budget feedback -->
+              <div class="budget-feedback capitalized"></div>
+              <form class="budget-form" id="budget-form">
+                <h1 class="capitalized text-accent fs-400 padding-buttom">please enter your budget title</h1>
+                <div class="form-group">
+                  <input id="budget-input"  type="number" class="budget-input form-control">
+                </div>
+                <button type="submit" class="btn-border text-accent capitalized" id="budget-submit">calculate</button>
+              </form>
+            </div>
+            <div class="column flex right-column-container">
+              <div class="budget-result">
+                <h6 class="uppercase fs-400 fw-600">budget</h6>
+                <h4 id="budget" class="uppercase fs-400 text-center">
+                  <span>$</span>
+                  <span id="budget-amount">0</span>
+                </h4>
+              </div>
+              <div class="expense-result">
+                <h6 class="uppercase fs-400 fw-600">expense</h6>
+                <h4 id="expense" class="uppercase fs-400 text-center">
+                  <span>$</span>
+                  <span id="expense-amount">0</span>
+                </h4>
+              </div>
+              <div class="balance-result">
+                <h6 class="uppercase fs-400 fw-600">balance</h6>
+                <h4 id="balance" class="uppercase balance fs-400 text-center">
+                  <span>$</span>
+                  <span id="balance-amount">0</span>
+                </h4>
+              </div>
+            </div>
+
+          </div>
+          <!-- expense form -->
+          <div class="row expense-form flex">
+            <div class="column expense-form-container">
+              <!-- expense feedback -->
+              <div class="expense-feedback capitalized">dead</div>
+              <form id="expense-form" class="expense-form">
+                <h1 class="capitalized fs-400 padding-buttom">Please enter your expense title</h1>
+                <div>
+                  <input id="expense-input" class="expense-input" type="text">
+                </div>
+                <h1 class="capitalized fs-400 padding-buttom">please enter expense amount</h1>
+                <input id="amount-input" class="amount-input" type="text">
+                <!-- submit button -->
+                <button type="submit" id="expense-submit" class="expense-submit btn-filled capitalized">add expense</button>
+              </form>
+              
+            </div>
+            <div class="columnn right-column-container">
+              <div class="expense-list" id="expense-list">
+                <div class="expense-list-info flex">
+                  <h2 class="list-item capitalized fs-400">expense title</h2>
+                  <h2 class="list-item capitalized fs-400">expense value</h2>
+                  <h2 class="list-item"></h2>
+                </div>
+                <!-- single expense -->
+                <!-- <div class="expense">
+                  <div class="expense-item-container flex">
+                    <h6 class="expense-title list-item">-title</h6>
+                    <h5 class="expense-amount list-item">amount</h5>
+                    <div class="expense-icon list-item">
+                      <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
+                      <a href="#"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+
+
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

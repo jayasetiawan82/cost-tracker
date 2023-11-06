@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="index.css" />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/60922564bf.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="bg-light">
+      <div class="header-container flex">
+        <div class="left-header flex">
+          <div class="hamburger button">
+            <i class="fa-solid fa-bars text-accent"></i>
+          </div>
+          <div class="logo">
+            <img src="assets/logo.svg" alt="" />
+          </div>
+        </div>
+        <div class="right-header">
+          <ul class="flex">
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-circle-info text-accent"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-bell text-accent"></i></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-circle-user text-accent"></i
+              ></a>
+            </li>
+            <li><h3 class="text-accent">Jaya</h3></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <aside class="bg-dark">
+        <div class="aside-container">
+          <ul>
+            <li>
+              <i class="fa-solid fa-clapperboard text-orange"></i
+              ><span class="text-accent">Dashboard</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-clapperboard text-orange"></i
+              ><span class="text-accent">budget tracker</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-clapperboard text-orange"></i
+              ><span class="text-accent">Labour</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-clapperboard text-orange"></i
+              ><span class="text-accent">Communication</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-clapperboard text-orange"></i
+              ><span class="text-accent">Quotes</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-clapperboard text-orange"></i
+              ><span class="text-accent">Estimate</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-clapperboard text-orange"></i
+              ><span class="text-accent">Client</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-clapperboard text-orange"></i
+              ><span class="text-accent">Report</span>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- app -->
+      <div class="inner-container">
+        <div><h1 class="padding-buttom">Hours Tracker</h1></div>
+
+        <div class="app-container">
+          <!-- append work form -->
+          <div class="row grid">
+            <div class="column hours-form-container bg-orange">
+              <!-- work feedback -->
+              <div class="hours-feedback capitalized"></div>
+              <form id="hours-form" class="hours-form">
+                <h2 class="capitalized padding-buttom">type of work</h2>
+                <div>
+                  <input id="work-input" class="work-input" type="text">
+                </div>
+                <h2 class="capitalized padding-buttom">Amount of Hours</h2>
+                <input id="hours-input" class="amount-input" type="text">
+                <!-- submit button -->
+                <button type="submit" id="work-submit" class="work-submit btn-filled capitalized">add hours</button>
+              </form>
+              
+            </div>
+            <div class="columnn right-column-container">
+              <div class="work-list" id="work-list">
+                <div class="hours-list-info flex">
+                  <h3 class="list-item capitalized">type of work</h3>
+                  <h3 class="list-item capitalized">hours</h3>
+                  <h5 class="list-item"></h5>
+                </div>
+                <!-- single work -->
+                <!-- <div class="work">
+                  <div class="work-list-container flex">
+                    <h6 class="work-title list-item">-title</h6>
+                    <h5 class="hours-amount list-item">amount</h5>
+                    <div class="expense-icon list-item">
+                      <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
+                      <a href="#"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+
+
+            </div>
+          </div>
+          <div class="bg-light total-hours-wrapper">
+            <h4 id="total-hours" class="capitalized text-accent padding-buttom">total hours of work:</h4>
+            <span id="total-hours-amount" class="text-dark text-orange fs-500">0</span>
+          </div>
+          
+        </div>
+
+      </div>
+    </main>
+    <script src="labour.js"></script>
+  </body>
+</html>
