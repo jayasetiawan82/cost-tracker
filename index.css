@@ -584,20 +584,25 @@ h6 {
 }
 
 /* Media */
-@media (max-width: 1282px) {
+@media (max-width: 1274px) {
   aside {
     display: none;
   }
+  .inner-container {
+    margin: auto;
+    padding: .1em;
+  }
+}
+@media (max-width: 1034px) {
+ 
 
   .row {
     display: flex;
     flex-direction: column;
   }
 
-
-
   .inner-container {
-    margin: 0;
+    margin: auto;
     padding: .1em;
   }
 
