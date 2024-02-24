@@ -582,3 +582,43 @@ h6 {
   border-radius: 10px;
   padding: 10px;
 }
+
+/* Media */
+@media (max-width: 1282px) {
+  aside {
+    display: none;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+  .inner-container {
+    margin: 0;
+    padding: .1em;
+  }
+
+  .app-container {
+    margin-right: -180px;
+  }
+
+  .right-header {
+    display: none;
+  }
+
+  .header-container {
+    padding-bottom: 1em;
+  }
+
+  .expense-result, .budget-result, .balance-result {
+    padding: 1em;
+  }
+  
+  .inner-heading {
+    margin-top: 1em;
+  }
+  
+}

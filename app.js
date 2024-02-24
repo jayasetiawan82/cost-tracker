@@ -140,7 +140,7 @@ editExpense(element) {
   this.showBalance()
 }
 
-//deleter expense
+//delete expense
 deleteExpense(element) {
   let id = parseInt(element.dataset.id)
   let parent = element.parentElement.parentElement.parentElement
