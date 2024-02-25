@@ -1,4 +1,4 @@
-# Ecommerce Website
+# Simple cost tracker
 
 This is a project from my IT course. The assesment was to build a simple calculator tool that could track expenditure, budget, balance as well as work hours. I use figma for design and javascript to implement features.  
 
